@@ -1,0 +1,48 @@
+<article class="product-card bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden flex flex-col hover:shadow-md transition-shadow duration-200">
+
+  <!-- Product Image -->
+  <div class="product-card__image-wrapper relative overflow-hidden bg-gray-50">
+    <img
+      [src]="product.image"
+      [alt]="product.title"
+      class="product-card__image w-full h-52 object-cover transition-transform duration-300"
+      loading="lazy"
+    />
+  </div>
+
+  <!-- Card Body -->
+  <div class="product-card__body flex flex-col flex-1 p-4 gap-2">
+
+    <!-- Category Badge -->
+    <span class="product-card__category inline-block self-start px-2 py-0.5 text-xs font-medium rounded-full bg-blue-50 text-blue-600">
+      {{ product.category }}
+    </span>
+
+    <!-- Title -->
+    <h3 class="product-card__title font-semibold text-gray-900 text-base leading-snug line-clamp-2">
+      {{ product.title }}
+    </h3>
+
+    <!-- Description -->
+    <p class="product-card__description text-gray-500 text-sm leading-relaxed line-clamp-2 flex-1">
+      {{ product.description }}
+    </p>
+
+    <!-- Footer: Price + Button -->
+    <div class="product-card__footer flex items-center justify-between mt-2 pt-3 border-t border-gray-100">
+      <span class="product-card__price text-xl font-bold text-blue-600">
+        ${{ product.price.toFixed(2) }}
+      </span>
+
+      <button
+        data-testid="add-to-cart-btn"
+        type="button"
+        class="product-card__btn px-4 py-2 bg-blue-500 hover:bg-blue-600 active:bg-blue-700 text-white text-sm font-medium rounded-lg transition-colors duration-150 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-1"
+        (click)="onAddToCart()"
+      >
+        Add to Cart
+      </button>
+    </div>
+
+  </div>
+</article>

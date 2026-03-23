@@ -1,0 +1,58 @@
+{
+  "name": "angular-ecommerce",
+  "version": "1.0.0",
+  "description": "Angular Ecommerce Customer App",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "test:coverage": "vitest --coverage",
+    "test:e2e": "playwright test",
+    "test:e2e:ui": "playwright test --ui",
+    "lint": "echo 'Linting not configured yet'",
+    "type-check": "tsc --noEmit"
+  },
+  "keywords": [
+    "angular",
+    "ecommerce",
+    "typescript",
+    "vitest"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@angular/animations": "^21.0.0",
+    "@angular/common": "^21.0.0",
+    "@angular/compiler": "^21.0.0",
+    "@angular/core": "^21.0.0",
+    "@angular/forms": "^21.0.0",
+    "@angular/material": "^21.0.0",
+    "@angular/cdk": "^21.0.0",
+    "@angular/platform-browser": "^21.0.0",
+    "@angular/platform-browser-dynamic": "^21.0.0",
+    "@angular/router": "^21.0.0",
+    "rxjs": "~7.8.0",
+    "tslib": "^2.3.0"
+  },
+  "devDependencies": {
+    "@analogjs/vite-plugin-angular": "^2.3.1",
+    "@angular-devkit/build-angular": "^21.2.3",
+    "@angular/cli": "^21.2.3",
+    "@angular/compiler-cli": "^21.2.5",
+    "@playwright/test": "^1.58.2",
+    "@testing-library/angular": "^19.2.1",
+    "@vitest/ui": "^4.1.0",
+    "autoprefixer": "^10.4.27",
+    "jsdom": "^28.1.0",
+    "postcss": "^8.5.8",
+    "tailwindcss": "^4.2.2",
+    "vite": "^7.3.1",
+    "vitest": "^4.1.0"
+  }
+}
